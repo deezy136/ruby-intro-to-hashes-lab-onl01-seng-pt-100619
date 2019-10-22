@@ -84,6 +84,7 @@ monopoly = {
       
      
     }
+    }
   }
   monopoly
 end
