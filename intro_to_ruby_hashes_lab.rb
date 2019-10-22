@@ -28,7 +28,7 @@ def monopoly_with_second_tier
       names: {}
     }
   }
-  monopoly_with_second_tier
+  monopoly
  end
 
 
@@ -41,10 +41,31 @@ monopoly = {
      rent_in_dollars: {}
    }
   }
-  monopoly_with_third_tier
+  monopoly
 end
 
 def monopoly_with_fourth_tier
 	#copy and past the monopoly hash you build in the previous method. We're going to add stuff to it here!
-
+monopoly = {
+    railroads: {
+      pieces: 4,
+      rent_in_dollars: {
+        one_piece_owned:      25, 
+# alt  :one_piece_owned =>    25,  <===this will give you the same result         
+        two_pieces_owned:     50,
+# alt  :two_pieces_owned =>   25,  <===this will give you the same result 
+        three_pieces_owned:   100, 
+# alt  :three_pieces_owned => 100, <===this will give you the same result 
+        four_pieces_owned:    200
+# alt  :four_pieces_owned =>  200  <===this will give you the same result 
+      }, 
+      names: {
+        reading_railroad: {},
+        pennsylvania_railroad: {},
+        b_and_o_railroad: {},
+        shortline: {}
+      }
+    }
+  }
+  monopoly
 end
